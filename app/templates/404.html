@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block title %}404 Error{% endblock %}
+{% block body %}
+<div style=" text-align: center;">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJLfz2e3mddRAWmBodb1a9D00-p4TFbywQ0g&s" alt="404"
+        style="height: 300px; width: 400px;margin-top: 50px; border-radius: 40px;">
+    <p style="font-size: 20px;">This page is not found you may go back to <a href="{%url 'index' %}">Home</a></p>
+</div>
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title %}
+Delete
+{% endblock %}
+
+{% block body %}
+<div class="main" style="text-align: center;margin-top: 50px;">
+    <form method="post">
+        {% csrf_token %}
+        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4803bd2a-7e2e-48f6-ad27-dbf7175b4632/dhijlcm-07fa84ca-2e8b-4079-87a8-c6ed91066f8c.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzQ4MDNiZDJhLTdlMmUtNDhmNi1hZDI3LWRiZjcxNzViNDYzMlwvZGhpamxjbS0wN2ZhODRjYS0yZThiLTQwNzktODdhOC1jNmVkOTEwNjZmOGMucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.zO7sywbBnYS8Lg4fUEF2Fm_gxJinWAqNTd2CxqSGoGo"
+            alt="delete" style="height: 240px; width: 270px;">
+        <h1>Are you sure you want to delete this data</h1>
+        <input type="submit" value="Yes" style="padding: 5px; font-size: 20px;background-color: rgb(255, 27, 27);">
+        <button style="font-size: 20px; padding: 5px;background-color: aqua;"><a href="{% url 'td' %}"
+                style="text-decoration: none; color: black;">Cancel</a></button>
+    </form>
+</div>
+{% endblock %}
